@@ -136,6 +136,8 @@ def season(
         year=None,
         directors=None,
         cast=None,
+        episodes=None,
+        is_original=None
 ):
     payload = {
         'Id': id_contenido,
@@ -146,6 +148,8 @@ def season(
         'Synopsis': synopsis,
         'Cast': cast,
         'Directors': directors,
+        'Episodes': episodes,
+        'IsOriginal': is_original
     }
     return payload
 
